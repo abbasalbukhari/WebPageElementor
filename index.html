@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- viewport meta !-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!-- fontawesome nur für Icons (nur Icons) !-->
+		<script src="https://kit.fontawesome.com/fe78ecbf8c.js"></script>
+		<!-- Web Page Elementor CSS Files !-->
+		<link rel="stylesheet" href="css/webpel_app.css" />
+		<link rel="stylesheet" href="css/webpel_framework.css" />
+		<link rel="stylesheet" href="css/wysiwyg_editor.css" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto|Titillium+Web&display=swap" rel="stylesheet">
+		<!-- Titel !-->
+		<title>Web Page Elementor</title>
+	</head>
+	<body>
+		<div class="container columns " id="webpel_contenar" ondrop="webp_elementor.drop(event)" ondragover="webp_elementor.allowDrop(event)" contenteditable="false">
+		</div>
+		<textarea  id="wysiwyg_textarea" ></textarea>
+		
+	<!-- Web Page Elementor JS Files !-->
+	<script  type="text/javascript" src="js/webpel_settings.js" ></script>
+	<script  type="text/javascript" src="js/webpel_app.js" ></script>
+	<script  type="text/javascript" src="js/webpel_framework.js" ></script>
+	<script  type="text/javascript" src="js/wysiwyg_editor.js" ></script>
+	<script  type="text/javascript">
+		//var wysiwyg_editor = new wysiwyg_editor();
+		var webp_elementor = new webp_elementor();	 
+	</script>	
+		<!-- !--> 
+		<div class="itemPanal" id="itemPanal" >
+			<div class="heder" id="editPanal_heder" onmousedown="draggab = 1;"  onmousemove="webp_elementor.dragElement(document.getElementById('itemPanal'));" onmouseup="draggab = 0;"  >
+				<i class="fa  fa-cubes"></i> WEBP Elementor  
+				 <i class="fas fa-times" onclick=" document.getElementById('itemPanal').style.display='none';"  style="float: right;font-size: 18px;cursor: pointer;"></i> 
+			</div>
+			
+			<div class="body" >
+			
+				<div class="row">
+				
+							<p  >Row and Colum <i  onclick="webp_elementor.classToggleMIT(this , 'HTMLELEMGROB')" class="fas fa-angle-up" style="float: right;cursor: pointer;"  ></i></p>
+							
+							<div class="row" id="HTMLELEMGROB" >
+							
+								<div class="cul50"  > 
+									<div class="elem"  draggable="true" id="el_-1" ondragstart="webp_elementor.drag(event)"  > <i class="fas fa-expand"></i> <br> Section   </div>
+								</div>
+								<div class="cul50"  > 
+									<div class="elem"    draggable="true" id="el_0" ondragstart="webp_elementor.drag(event)"  > <i class="fas fa-expand"></i>    <br>Full Section      </div>
+								</div>
+						 
+								<div class="cul50"  > 
+									<div class="elem"  draggable="true" id="el_1" ondragstart="webp_elementor.drag(event)"  > <i class="fa fa-stop"></i> <br> Row  </div>
+								</div>
+								<div class="cul50"  > 
+									<div class="elem"    draggable="true" id="el_2" ondragstart="webp_elementor.drag(event)"  > <i class="fa fa-stop"></i> <i class="fa fa-stop"></i>  <br>  2 Colum</div>
+								</div>
+							 
+								<div class="cul50"  > 
+									<div class="elem"   draggable="true" id="el_3" ondragstart="webp_elementor.drag(event)"  ><i class="fa fa-stop"></i>  <i class="fa fa-stop"></i> <i class="fa fa-stop"></i>  <br>  3 Colum</div>
+								</div>
+								<div class="cul50"  > 
+									<div class="elem"  draggable="true" id="el_4" ondragstart="webp_elementor.drag(event)"  ><i class="fa fa-stop"></i>  <i class="fa fa-stop"></i>  <i class="fa fa-stop"></i>  <i class="fa fa-stop"></i>   <br>    4  Colum </div>
+								</div>
+							
+							</div>
+			 
+							<hr style="color: #fff;">
+
+							<p >HTML Elemants <i  onclick="webp_elementor.classToggleMIT(this , 'HTMLELEMGROB2')" class="fas fa-angle-up" style="float: right;cursor: pointer;"  ></i> </p>
+								
+							<div class="row" id="HTMLELEMGROB2" >	
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"   draggable="true" id="el_5" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-heading"></i>  <br> Heading </div>
+									</div>
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"    draggable="true" id="el_6" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-paragraph"></i>  <br> Paragraph  </div>
+									</div>
+				 
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_7" ondragstart="webp_elementor.drag(event)"  ><i class="far fa-image"></i>  <br> Image </div>
+									</div>
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"   draggable="true" id="el_8" ondragstart="webp_elementor.drag(event)"  ><i class="fab fa-youtube"></i>  <br> Video  </div>
+									</div>
+					 
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_9" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-map"></i>  <br> Map </div>
+									</div>
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_10" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-code"></i> <br> HTML Code  </div>
+									</div>
+					 
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_11" ondragstart="webp_elementor.drag(event)"  ><i  class="fas fa-minus"></i>   <br> Table </div>
+									</div>
+									<div class="cul50"  > 
+										<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_12" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-link"></i> <br> Link  </div>
+									</div>
+							</div>
+							
+							<hr style="color: #fff;">
+
+							<p class="editPanal_p"  >HTML Component <i  onclick="webp_elementor.classToggleMIT(this , 'HTMLELEMGROB3')" class="fas fa-angle-up" style="float: right;cursor: pointer;"  ></i> </p>
+							<div class="row" id="HTMLELEMGROB3" >	
+								<div class="cul50"  > 
+									<div class="elem"  onclick=" document.getElementById('iconPanal').style.display='block';" style="cursor: grab;" ><i class="fas fa-icons"></i><br> Icons  </div>
+								</div>
+								<div class="cul50"  > 
+									<div class="elem"   ondrop="webp_elementor.drop(event)"  draggable="true" id="el_13" ondragstart="webp_elementor.drag(event)" ><i class="fas fa-bars"></i><br> NavBar  </div>
+								</div>
+								<div class="cul50"  > 
+									<div class="elem"   ondrop="webp_elementor.drop(event)"  draggable="true" id="el_14" ondragstart="webp_elementor.drag(event)" ><i class="fas fa-id-card-alt"></i><br> Card  </div>
+								</div>
+								<div class="cul50"  > 
+									<div class="elem"   ondrop="webp_elementor.drop(event)"  draggable="true" id="el_15" ondragstart="webp_elementor.drag(event)" ><i class="fas fa-icons"></i><br> Card with icon  </div>
+								</div> 
+								<div class="cul50"  > 
+									<div class="elem"   ondrop="webp_elementor.drop(event)"  draggable="true" id="el_16" ondragstart="webp_elementor.drag(event)" ><i class="fas fa-icons"></i><br> Footer  </div>
+								</div>
+							</div>	
+								<hr style="color: #fff;">	
+				</div>	
+					 
+			</div>	
+		</div>
+
+		<!--    !-->   
+		<div class="settingsPanal" id="settingsPanal" >
+			<div class="heder" id="heder" onmousedown="draggab = 1;"  onmousemove="webp_elementor.dragElement(document.getElementById('settingsPanal'));" onmouseup="draggab = 0;"  > <i class="fas fa-cogs"></i>  Element Properties  <i class="fas fa-times" onclick=" document.getElementById('settingsPanal').style.display='none';"  style="float: right;font-size: 18px;cursor: pointer;"></i>  </div>
+				<div style="background: #fff;">
+					<button id="content_butt" class="taps_prop_butt active" onclick="webp_elementor.openSettingsTap('Content');toggleClass('styling_butt', 'active');"> <i class="fas fa-edit"></i> Content</button>
+					<button id="styling_butt" class="taps_prop_butt" onclick="webp_elementor.openSettingsTap('Styling')"> <i class="fas fa-broom"></i> Styling</button>
+				</div>
+			<div class="body">
+				<div class="row">
+					<div id="Content" class="taps" style="">
+						<div  >
+							<p class="editPanal_p">Content</p>
+							<br>
+							<table style="width: 100%;">
+								<tr>
+									<td style="text-align: right;width: 20px;" >  <i onclick="webp_elementor.liveEditAlignLeft()" class="fas fa-align-left" style="cursor: pointer;">   </i> </td>
+									<td style="text-align: center;width: 56px;">  <i onclick="webp_elementor.liveEditAlignCenter()" class="fas fa-align-center" style="cursor: pointer;"> </i> </td>
+									<td                                        >  <i onclick="webp_elementor.liveEditAlignRight()" class="fas fa-align-right" style="cursor: pointer;">  </i> </td>
+								</tr>
+ 
+							</table>
+							<input id="text_h"  onkeyup="webp_elementor.liveEditContent()" class="input_content cul50" type="text" style="width: 292px;"  placeholder="Titel "> 
+								<br><br>
+								<br> 
+							<p class="editPanal_p">Paragraph</p>
+								
+							 
+							 <textarea   onkeyup="webp_elementor.liveEditParagraph()" class="input_content cul50"   placeholder="Text " rows="4" cols="50" style="height: 100px;width: 100%; "></textarea> 	
+								
+								<br><br><br><br><br><br>
+							 
+							<p class="editPanal_p">Image Src</p>
+								
+							<input id="liveEditimgsrc"  onkeyup="webp_elementor.liveEditimgsrc()" class="input_content cul50" type="text" style="width: 292px;"  placeholder="Image Src "> 
+
+							<br><br><br> 
+						</div>
+					</div>
+					<div id="Styling" class="taps" style="display:none">
+					
+						<table>
+							<tr>
+								<td><p  class="editPanal_p" > Width </p></td>
+								<td><input id="liveEditwidth" onchange="webp_elementor.liveEditwidth()" class="input_content  " type="number" ></td>
+							</tr>
+							<tr>
+								<td><p  class="editPanal_p" > Height</p></td>
+								<td><input id="liveEditHeight" onchange="webp_elementor.liveEditHeight()" class="input_content" type="number"  ></td>
+							</tr>
+							<tr>
+								<td><p  class="editPanal_p" > Border Radius </p></td>
+								<td><input id="liveEditBorRadius" onchange="webp_elementor.liveEditBorRadius()" class="input_content" type="number"  ></td>
+							</tr>
+							<tr> 
+								<td><p  class="editPanal_p" > Font Size </p></td>
+								<td><input id="FontSize" onchange="webp_elementor.FontSize()" class="input_content" type="number"  ></td>
+							</tr>
+							<tr>
+								<td><p  class="editPanal_p" > Margin </p></td>
+								<td><input id="liveEditMargin" onchange="webp_elementor.liveEditMargin()" class="input_content" type="number"  ></td>
+							</tr>
+							<tr>
+								<td><p  class="editPanal_p" > Padding </p></td>
+								<td><input id="liveEditPadding" onchange="webp_elementor.liveEditPadding()" class="input_content" type="number"  ></td>
+							</tr>
+							<tr>
+								<td><p  class="editPanal_p" > Text Color</p></td>
+								<td><input id="TextColor"  onchange="webp_elementor.TextColor()" class="input_content_color"  type="color" value="#ff0000"   ></td>
+							</tr>
+							<tr>
+								<td><p class="editPanal_p" > Background Color</p></td>
+								<td><input id="BackgroundColor" onchange="webp_elementor.BackgroundColor()" class="input_content_color"  type="color" value="#ff0000"  ></td>
+							</tr>
+						</table>
+						
+					</div>
+				</div>	
+			</div>
+			<button class="delet_selc_element" onclick="webp_elementor.removeElem()" > <i class="fas fa-trash-alt"></i> Delete Select Element</button>
+		</div>
+
+		<!--    !-->   
+		<div class="iconPanal" id="iconPanal" >
+			<div class="heder" id="heder" onmousedown="draggab = 1;"  onmousemove="webp_elementor.dragElement(document.getElementById('iconPanal'));" onmouseup="draggab = 0;"  >    Icons  <i class="fas fa-times" onclick=" document.getElementById('iconPanal').style.display='none';"  style="float: right;font-size: 18px;cursor: pointer;"></i>  </div>
+			<div class="body">
+				<div class="row">
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_1" ondragstart="webp_elementor.drag(event)"  ><i class="fab fa-facebook-square icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_2" ondragstart="webp_elementor.drag(event)"  ><i class="fab fa-youtube   icondr"></i> <br> </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_3" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-thumbs-up icondr"></i> <br> </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_4" ondragstart="webp_elementor.drag(event)"  ><i class="fab fa-instagram icondr"></i> <br> </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_5" ondragstart="webp_elementor.drag(event)"  ><i class="fab fa-apple icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_6" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-bell icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_7" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-bomb icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_8" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-camera icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_9" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-chart-line icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_10" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-caret-down icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_11" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-caret-left icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_12" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-caret-right icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_13" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-caret-up icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_14" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-check icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_15" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-bezier-curve icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_16" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-chart-pie icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_17" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-chess-king icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_18" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-cloud-meatball icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33"  >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_19" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-cloud-rain icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_20" ondragstart="webp_elementor.drag(event)"  ><i class="fas fa-code-branch icondr"></i> <br>    </div>
+					</div>
+					<div class="cul33_33" >
+							<div class="elem"  ondrop="webp_elementor.drop(event)"  draggable="true" id="el_icon_20" ondragstart="webp_elementor.drag(event)"  ><i class="fab fa-codepen icondr"></i> <br>    </div>
+					</div>
+				</div>	
+			</div>
+		</div> 
+		  
+	</body>
+</html>

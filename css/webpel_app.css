@@ -1,0 +1,374 @@
+/*  Global classs */
+/******************/
+.rev_ifram{
+	border-radius: 10px;
+	border-top: 19px solid #666;
+	border-left: 7px solid #404040;
+	border-right: 7px solid #404040;
+	border-bottom: 51px solid #666;
+	margin-left: 50%;
+	transform: translate(-50%, 3%);
+	-webkit-box-shadow: 7px 15px 35px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 15px 35px -7px rgba(0,0,0,0.75);
+	box-shadow: 7px 15px 35px -7px rgba(0,0,0,0.75);
+	scrollbar-color: #fff rgba(180, 180, 180, 0.16) ;
+	scrollbar-width: thin;
+}
+
+.rev_ifram::after {content: " - Remember this";}
+@media screen and (max-width: 800px){
+	#control_buttons , #itemPanal , #settingsPanal , #iconPanal {
+		display:none !important;
+	}
+}
+.disabled {
+	background:#c6c6c6 !important;cursor:  unset  !important;
+ }
+
+.container {
+    max-width: 1100px;
+	margin: auto;
+	min-height: 50px;
+    padding-bottom: 20px;
+
+}
+
+.bordered{
+	border :1px dotted #8c1818;
+    margin:5px 0 5px 0;
+	padding-bottom: 15px !important;
+}
+.bordered:Hover {
+    border :1px dashed #8c1818;
+	border-color:red
+}
+.section_bordered {
+	border: 1px dashed #2f2e2e;
+}
+.section_bordered:Hover {
+	border: 2px dashed #2f2e2e;
+}
+
+.section_bordered::after {
+	content: '+';
+	right: 49%;
+	position: absolute;
+	bottom: 0;
+	background: #555;
+	color: #fff;
+	width: 39px;
+	height: 19px;
+	text-align: center;
+	display: none;
+	cursor: move;
+	border-radius: 5px 5px 0 0;
+	font-weight: bold;
+}
+
+.section_bordered:Hover:after {
+    display: block;
+}
+
+.container_mob{
+	width: 300px;
+	border-radius: 10px;
+	border-top: 15px solid #2b2a2a;
+	border-left: 15px solid #000;
+	border-right: 15px solid #000;
+	border-bottom: 35px solid #2b2a2a;
+	max-height: 500px;
+	min-height: 500px;
+}
+
+.container_tabl{
+	width: 800px;
+	border-radius: 10px;
+	border-top: 15px solid #2b2a2a;
+	border-left: 15px solid #000;
+	border-right: 15px solid #000;
+	border-bottom: 35px solid #2b2a2a;
+	max-height: 600px;
+	min-height: 500px;
+}
+
+/* Create CSS of control buttons */
+/*********************************/
+
+#control_buttons{
+	font-family: Tahoma, Arial;
+	position: fixed;
+	display: inline-grid;
+	top: 129px;
+	right: 26px;
+}
+
+#control_buttons i{
+	font-size:22px
+}
+
+#control_buttons button{
+	border: 0;
+	border-radius: 5px;
+	width: 50px;
+	height: 50px;
+    -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+	color: #fff;
+	margin: 5px;
+}
+
+#control_buttons button.icon_items_panel{
+    background: #011626
+}
+
+
+#control_buttons button.icon_cancel{  
+    background: #c0392b
+}
+
+#control_buttons button.icon_save_page{
+	background: #27ae60
+}
+
+#control_buttons button.icon_mobil_tap_desk{
+	background: #ae2786;
+	border-radius: 5px;
+}
+
+/* Create CSS of Items panel */
+/*****************************/
+
+#itemPanal{
+	font-family: Tahoma, Arial;
+	margin:0;
+    padding: 0;
+	position: fixed;
+	max-width: 310px;
+	min-width: 310px;
+	height: 90vh;
+	background:  #eaeaea;;
+	border-radius: 5px;
+	top: 10px;
+	right: 69px;
+	display: none;
+	-webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.57);
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.57);
+}
+
+#itemPanal .heder{
+	background: #011626;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	cursor: all-scroll;
+}
+
+#itemPanal .body{
+	scrollbar-color: #fff rgba(180, 180, 180, 0.16) ;
+	scrollbar-width: thin;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 92%;
+}
+
+#itemPanal H1{
+	cursor:pointer;
+}
+
+#itemPanal .elem{ 
+	width: 135px;
+	height: 100px;
+	cursor: all-scroll;
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;  color:#555 ;-webkit-box-shadow: 0 2px 20px 0 rgba(179, 179, 179, 0.57);
+	box-shadow: 0 2px 20px 0 rgba(179, 179, 179, 0.57));
+}
+
+#itemPanal .elem:hover {
+	color:#011626;
+}
+
+#itemPanal p{
+	color: #7d7d7d;
+	padding: 5px 5px 0px 8px;
+	font-size: 14px;
+	margin: 2px 0 0px 0;
+}
+
+#itemPanal .cul50{
+	width: 50%;
+	float: left;
+	padding: 10px;
+	min-height:35px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+#itemPanal .cul50::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#itemPanal .fa-cubes{
+	font-size:20px;
+}
+
+#itemPanal .fa-paragraph , .fa-icons , .fa-heading, .fa-id-card-alt , .fa-minus , .fa-sitemap , .fa-bars , .fa-code , .icondr , .fa-map ,.fa-youtube , .fa-link ,.fa-image , .fa-stop , .fa-table   , .fa-expand , .fa-icons{
+	font-size: 27px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+
+/* Create CSS of settings Items panel */
+/**************************************/
+
+#settingsPanal{
+	position: fixed;
+	max-width: 310px;
+	min-width: 310px;
+	height: 425px;
+	background:  #eaeaea;;
+	border-radius: 5px;
+	top: 10px;
+	right: 69px;
+	display: none;
+	-webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.57);
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.57);
+	z-index: 9;
+}
+
+#settingsPanal .heder{
+	background: #011626;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	cursor: all-scroll;
+}
+
+#settingsPanal .body{
+	scrollbar-color: #fff rgba(180, 180, 180, 0.16) ;
+	scrollbar-width: thin;
+	overflow-y: scroll;
+	height: 315px;
+}
+
+#settingsPanal h1{
+	cursor:pointer;
+}
+
+#settingsPanal .taps_prop_butt {
+    background: #fff;
+    color: #575656;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+	width: 153px;
+}
+
+#settingsPanal .taps_prop_butt.active  {
+    border-bottom: 3px solid #011626
+}
+
+#settingsPanal .taps{
+    margin: 5px;
+    color: #606060;
+}
+
+#settingsPanal .delet_selc_element{
+    width: 100%;
+    height: 32px;
+    background: #fff;
+    border: 0;
+    color: #686868;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+}
+
+#settingsPanal .delet_selc_element:hover{
+    color: #011626
+}
+
+#settingsPanal .input_content {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	margin-top: 14px;
+	float: right;
+}
+#settingsPanal .input_content_color {
+    width: 90%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 21px  0 10px 0;
+}
+
+#settingsPanal p {
+
+color: #7d7d7d;
+
+padding: 11px 5px 0px 8px;
+
+font-size: 14px;
+
+margin: 2px 0 0px 0;
+ 
+
+}
+
+/* Create CSS of settings Items panel */
+/**************************************/
+
+#iconPanal{
+	position: fixed;
+	max-width: 310px;
+	min-width: 310px;
+	height: 300px;
+	background:  #eaeaea;;
+	border-radius: 5px;
+	top: 9px;
+	right: 69px;
+	-webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.57);
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.57);
+	display:none;
+}
+
+#iconPanal .heder{
+	background: #011626;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px 5px 0 0;
+	cursor: all-scroll;
+}
+
+#iconPanal .body{
+	scrollbar-color: #fff rgba(180, 180, 180, 0.16) ;
+	scrollbar-width: thin;
+	overflow-y: scroll;
+	height: 258px;
+}
+
+#iconPanal h1{
+	cursor:pointer;
+}
+ 
+#iconPanal .elem{ 
+	width: 88px;
+	height: 67px;
+	cursor: all-scroll;
+	text-align: center;
+	background: #fff;
+	border-radius: 5px;  color:#555 ;-webkit-box-shadow: 0 2px 20px 0 rgba(179, 179, 179, 0.57);
+	box-shadow: 0 2px 20px 0 rgba(179, 179, 179, 0.57));
+	margin: auto;
+}
+
+#iconPanal .elem:hover {
+	color:#011626;
+}
+

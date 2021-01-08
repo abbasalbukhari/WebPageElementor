@@ -1,0 +1,24 @@
+#wysiwygEditor{
+	width: 500px;
+	height: 500px;
+	background-color:#f5f5f5;
+}
+
+#wysiwyg_cont{
+	width:418px;
+}
+
+.wysiwygButt{
+	height: 35px;
+	color: #1e1e1e;
+	background: #eaeaea;
+	border: 0;
+	cursor: pointer;
+	width: 56px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #000 !important;
+}
+
+.wysiwygButt:hover{
+	background: #bbb;
+}
